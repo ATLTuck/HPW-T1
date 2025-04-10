@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>High-Performance Task Manager</title>
+  <meta name="description" content="A high-performance, real-time task management application">
+  
+  <!-- Preload key assets for performance -->
+  <link rel="preload" href="/src/styles.css" as="style">
+  <link rel="preload" href="/src/index.jsx" as="script">
+  
+  <!-- Preconnect to API server -->
+  <link rel="preconnect" href="http://localhost:8080">
+  
+  <!-- Meta tags for PWA support -->
+  <meta name="theme-color" content="#4361ee">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Font display optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- DNS prefetching -->
+  <link rel="dns-prefetch" href="http://localhost:8080">
+  
+  <!-- Critical CSS inlining would go here in production -->
+</head>
+<body>
+  <!-- Minimal HTML structure for fastest rendering -->
+  <noscript>
+    <strong>This application requires JavaScript to be enabled.</strong>
+  </noscript>
+  
+  <div id="root"></div>
+  
+  <!-- App entry point -->
+  <script type="module" src="/src/index.jsx"></script>
+</body>
+</html> 
